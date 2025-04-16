@@ -170,7 +170,7 @@ const About = () => {
       </section>
 
       {/* 6. Certificates */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-blue-900 mb-8">Certifications & Compliance</h2>
           <p className="text-lg mb-6">Compliance is our strength. We are proud to be certified by:</p>
@@ -185,7 +185,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section> 
 
       {/* 7. Call to Action */}
       <section className="py-16 bg-blue-900 text-white text-center">
