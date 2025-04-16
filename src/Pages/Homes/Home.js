@@ -13,8 +13,7 @@ export default class Home extends Component {
         <QualityInnovationCompliance/>  
         <OurProductions/>
         <Innovation/>
-        <TestimonialsAndClients/>
-      
+        <TestimonialsAndClients/>    
       </div>
     )
   }
