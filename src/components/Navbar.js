@@ -12,8 +12,10 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png" alt="Ocean Weave Logo" className="h-10 w-auto" />
-          <span className="text-xl font-bold text-blue-800 tracking-wide">Ocean Weave</span>
+          <a href="/"><img src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png" alt="Ocean Weave Logo" className="h-10 w-auto" /></a>
+          <span className="text-xl font-bold text-blue-800 tracking-wide">
+            <a href="/">Ocean Weave</a>
+          </span>
         </div>
 
         {/* Desktop Menu */}

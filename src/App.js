@@ -24,3 +24,9 @@ function App() {
 }
 
 export default App;
+// git init
+// git add .
+// git commit -m "first commit"
+// git branch 
+// git remote add origin https://github.com/Raju1-Ahmed/wave.git
+// git push 
