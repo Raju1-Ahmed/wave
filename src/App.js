@@ -6,7 +6,7 @@ import About from './Pages/About';
 import ProductionPage from './Pages/Products/ProductionPage';
 import Footer from './components/Footer';
 import Kids from './Pages/Products/Kids';
-
+// Routes 
 function App() {
   return (
     <BrowserRouter>
