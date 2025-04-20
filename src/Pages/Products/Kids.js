@@ -53,9 +53,9 @@ const Kids = () => {
   
           <div className="flex justify-center items-center h-screen bg-white">
             <img
-              src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
+              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
               alt="Loading..."
-              className="h-20 w-20 zoom-animation"
+              className=" zoom-animation"
             />
           </div>
         </>

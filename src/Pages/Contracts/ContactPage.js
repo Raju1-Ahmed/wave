@@ -30,11 +30,11 @@ const ContactPage = () => {
         </style>
 
         <div className="flex justify-center items-center h-screen bg-white">
-          <img
-            src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
-            alt="Loading..."
-            className="h-20 w-20 zoom-animation"
-          />
+        <img
+              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
+              alt="Loading..."
+              className=" zoom-animation"
+            />
         </div>
       </>
     );

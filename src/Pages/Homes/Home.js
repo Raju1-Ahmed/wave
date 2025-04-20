@@ -46,10 +46,10 @@ export default class Home extends Component {
           </style>
 
           <div className="flex justify-center items-center h-screen bg-white">
-            <img
-              src={logo}
-              alt="Ocean Weave Logo"
-              className="h-24 w-24 zoom-animation"
+          <img
+              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
+              alt="Loading..."
+              className=" zoom-animation"
             />
           </div>
         </>
