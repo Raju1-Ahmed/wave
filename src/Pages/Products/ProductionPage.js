@@ -24,7 +24,9 @@ const fadeIn = (direction = "up", delay = 0.2) => {
 
 const ProductionPage = () => {
   const productCategories = [
-    { title: "Menswear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s", url: "/menswear" },
+    { title: "Menswear", 
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
+      url: "/menswear" },
     { title: "Womenswear", img: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg", url: "/womenswear" },
     { title: "Kidswear", img: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg", url: "/kids" },
     { title: "Sportswear", img: "https://i.ibb.co.com/gMNzNcqb/download.jpg", url: "/sportswear" },

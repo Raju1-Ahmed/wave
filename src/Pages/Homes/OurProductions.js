@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
@@ -15,7 +16,7 @@ const OurProductions = () => {
   const products = [
     {
       title: "Men's Denim Jackets",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",     
     },
     {
       title: "Casual Shirts",
@@ -28,6 +29,7 @@ const OurProductions = () => {
     {
       title: "Kids Collection",
       image: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
+      url: "/kids" 
     },
     {
       title: "Women’s Fashion",
@@ -79,11 +81,13 @@ const OurProductions = () => {
               className="relative group rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white"
               variants={fadeInUp}
             >
+              <Link to={product.url}>
               <img
                 src={product.image}
                 alt={product.title}
                 className="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
+              </Link>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-6 py-4">
                 <h3 className="text-white text-xl font-semibold">
                   {product.title}

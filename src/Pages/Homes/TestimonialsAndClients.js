@@ -35,12 +35,12 @@ const testimonials = [
   },
 ];
 
-const clientLogos = [
-  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJqjY1ycX0tjY6tTTjt8uV-MeJDkp0NgCq684ZuAYMzPhaRbxv_NacGzErtfaq3KVJjk&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8RQUF257gB28m0W0oq2kZIUhdEieA5WE3w&s",
-];
+// const clientLogos = [
+//   "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740",
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJqjY1ycX0tjY6tTTjt8uV-MeJDkp0NgCq684ZuAYMzPhaRbxv_NacGzErtfaq3KVJjk&usqp=CAU",
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s",
+//   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8RQUF257gB28m0W0oq2kZIUhdEieA5WE3w&s",
+// ];
 
 const TestimonialsAndClients = () => {
   return (
@@ -92,7 +92,7 @@ const TestimonialsAndClients = () => {
       </motion.div>
 
       {/* Client Logos */}
-      <motion.div
+      {/* <motion.div
         className="mt-20 max-w-6xl mx-auto px-4"
         initial="hidden"
         whileInView="visible"
@@ -113,7 +113,7 @@ const TestimonialsAndClients = () => {
             />
           ))}
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

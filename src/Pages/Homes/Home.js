@@ -4,6 +4,7 @@ import QualityInnovationCompliance from './QualityInnovationCompliance'
 import Innovation from './Innovation'
 import OurProductions from './OurProductions'
 import TestimonialsAndClients from './TestimonialsAndClients'
+import AboutSection from './AboutSection'
 
 export default class Home extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class Home extends Component {
         <QualityInnovationCompliance/>  
         <OurProductions/>
         <Innovation/>
+        <AboutSection/>
         <TestimonialsAndClients/>    
       </div>
     )
