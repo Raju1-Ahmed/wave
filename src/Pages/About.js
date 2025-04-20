@@ -32,6 +32,14 @@ import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons
 //   },
 // };
 
+const imageUrls = [
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
+  "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
+  "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
+  "https://i.ibb.co.com/gMNzNcqb/download.jpg",
+  "https://i.ibb.co.com/B2xvDF8p/download-1.jpg"
+];
+
 const About = () => {
   return (
     <main 
@@ -40,6 +48,32 @@ const About = () => {
     // whileInView="show"
     // viewport={{ once: true }}
     className="text-gray-800 bg-white">
+       <section className="relative h-screen w-full overflow-hidden">
+      {/* Background Image Layers */}
+      <div className="absolute inset-0 flex flex-wrap z-0">
+        {imageUrls.map((src, i) => (
+          <motion.div
+            key={i}
+            className="w-1/2 h-full"
+            initial={{ opacity: 0, scale: 1.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: i * 0.2 }}
+          >
+            <img
+              src={src}
+              alt={`about-bg-${i}`}
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Centered Heading */}
+      <div className="relative z-10 flex items-center justify-center h-full bg-black/40">
+        <h1 className="text-5xl md:text-6xl font-bold text-white">About</h1>
+      </div>
+    </section>
       {/* 1. About Us Intro */}
       <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="container mx-auto px-4 md:px-10 flex flex-col lg:flex-row items-center gap-12">
@@ -170,7 +204,7 @@ const About = () => {
       </section>
 
       {/* 6. Certificates */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-blue-900 mb-8">Certifications & Compliance</h2>
           <p className="text-lg mb-6">Compliance is our strength. We are proud to be certified by:</p>
@@ -185,7 +219,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section> 
+      </section>  */}
 
       {/* 7. Call to Action */}
       <section className="py-16 bg-blue-900 text-white text-center">

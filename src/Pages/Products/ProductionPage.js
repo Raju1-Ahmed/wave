@@ -65,18 +65,24 @@ const ProductionPage = () => {
         </div>
       </section>
 
-      {/* 2. Introduction Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100">
-        <motion.div
-          className="container mx-auto px-6 text-center"
-          {...fadeIn("up", 0.2)}
-        >
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Production Process</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            Ocean Weave ensures every step of the production process meets global standards of quality, sustainability, and innovation.
-          </p>
-        </motion.div>
-      </section>
+   {/* 2. Introduction Section */}
+<section
+  className="py-20 bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: `url('https://pawlafashion.com/wp-content/uploads/2024/07/Garment-Factories-1.png')`, // Replace with your own image URL
+  }}
+>
+  <motion.div
+    className="container mx-auto px-6 text-center bg-white/70 backdrop-blur-sm py-12 rounded-lg"
+    {...fadeIn("up", 0.2)}
+  >
+    <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Production Process</h2>
+    <p className="text-lg max-w-3xl mx-auto text-gray-800">
+      Ocean Weave ensures every step of the production process meets global standards of quality, sustainability, and innovation.
+    </p>
+  </motion.div>
+</section>
+
 
       {/* 3. Production Steps Timeline */}
       <section className="py-16 bg-white">
@@ -107,7 +113,7 @@ const ProductionPage = () => {
       </section>
 
       {/* 4. Certifications Highlight */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <motion.div className="container mx-auto px-6 text-center" {...fadeIn("up", 0.2)}>
           <h3 className="text-3xl font-bold text-blue-900 mb-6">Certified Production</h3>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
@@ -124,7 +130,7 @@ const ProductionPage = () => {
             ))}
           </div>
         </motion.div>
-      </section>
+      </section> */}
 
       {/* 5. Call to Action */}
       <section className="py-20 bg-blue-900 text-white text-center">
