@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -23,6 +23,45 @@ const fadeIn = (direction = "up", delay = 0.2) => {
 };
 
 const ProductionPage = () => {
+ const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        {/* Inline animation style inside JSX */}
+        <style>
+          {`
+            @keyframes zoomInOut {
+              0%, 100% {
+                transform: scale(1);
+              }
+              50% {
+                transform: scale(1.2);
+              }
+            }
+
+            .zoom-animation {
+              animation: zoomInOut 2s ease-in-out infinite;
+            }
+          `}
+        </style>
+
+        <div className="flex justify-center items-center h-screen bg-white">
+          <img
+            src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
+            alt="Loading..."
+            className="h-20 w-20 zoom-animation"
+          />
+        </div>
+      </>
+    );
+  }
+
   const productCategories = [
     { title: "Menswear", 
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
@@ -138,7 +177,7 @@ const ProductionPage = () => {
           <h3 className="text-3xl font-bold mb-4">Looking to Start Your Production?</h3>
           <p className="mb-6 text-lg">Let’s create amazing products together — from concept to completion.</p>
           <a
-            href="/contact"
+            href="/contractPage"
             className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-200 transition"
           >
             Get in Touch

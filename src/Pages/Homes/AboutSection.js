@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import {FaArrowRight } from "react-icons/fa";
 
 const imageUrls = [
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
-          "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
-          "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
-          "https://i.ibb.co.com/gMNzNcqb/download.jpg",
-          "https://i.ibb.co.com/B2xvDF8p/download-1.jpg"
+          "https://media.istockphoto.com/id/1488507564/photo/basic-womens-autumn-wardrobe-with-shoes-and-handbags-on-hanger.jpg?s=612x612&w=0&k=20&c=zUU8Y26dbIamZ6WMTpGwgfkBTaSY3y8JYemAKhwp7B4=",
+          "https://media.istockphoto.com/id/669451786/photo/row-of-nurse-uniform-hanging.jpg?b=1&s=612x612&w=0&k=20&c=CR1OPDoFSbui34qL5jSwM7qgQHfjYXq0RwKJUMWv0Vs=",
+          "https://media.istockphoto.com/id/2192191401/photo/woman-sorting-an-old-out-of-use-kid-toy-clothes-and-shoes-in-box-for-charity-or-upcycling.jpg?b=1&s=612x612&w=0&k=20&c=UxmA7azo_EFsQ4SfxOKHT1A_GttTykMqSzHPBebLcF0=",
+          "https://media.istockphoto.com/id/934659218/photo/black-and-burgundy-blouse-bouquet-of-tulips-fashionable-concept.jpg?s=612x612&w=0&k=20&c=B_4HXJrLnxWi-03JuRDGpTStPt1VhL79C19zDqrd6pM=",
+          // "https://i.ibb.co.com/B2xvDF8p/download-1.jpg"
 ];
 
 const imageVariants = {

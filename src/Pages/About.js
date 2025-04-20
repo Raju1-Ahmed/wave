@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons/fa";
 
@@ -33,14 +33,52 @@ import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons
 // };
 
 const imageUrls = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
-  "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
+  "https://media.istockphoto.com/id/173910563/photo/display-of-several-polo-shirts-in-a-variety-of-color.jpg?s=1024x1024&w=is&k=20&c=snqLEqIIOofmKgkgSTy3-ncaqdz6UKwY6YKbxQCpiKU=",
+  "https://media.istockphoto.com/id/669451786/photo/row-of-nurse-uniform-hanging.jpg?s=1024x1024&w=is&k=20&c=gf7rMaTKxS2HYMHesutbF3aBs_zzkKS-fv3ujNuZYvM=",
   "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
   "https://i.ibb.co.com/gMNzNcqb/download.jpg",
   "https://i.ibb.co.com/B2xvDF8p/download-1.jpg"
 ];
 
 const About = () => {
+  const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => setLoading(false), 1500);
+      return () => clearTimeout(timer);
+    }, []);
+  
+    if (loading) {
+      return (
+        <>
+          {/* Inline animation style inside JSX */}
+          <style>
+            {`
+              @keyframes zoomInOut {
+                0%, 100% {
+                  transform: scale(1);
+                }
+                50% {
+                  transform: scale(1.2);
+                }
+              }
+  
+              .zoom-animation {
+                animation: zoomInOut 2s ease-in-out infinite;
+              }
+            `}
+          </style>
+  
+          <div className="flex justify-center items-center h-screen bg-white">
+            <img
+              src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
+              alt="Loading..."
+              className="h-20 w-20 zoom-animation"
+            />
+          </div>
+        </>
+      );
+    }
   return (
     <main 
     // variants={staggerContainer}
@@ -186,22 +224,27 @@ const About = () => {
         </div>
       </motion.section>
 
-      {/* 5. Our Values */}
-      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-12">What We Believe</h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            {["Quality First", "Fair Trade", "Sustainability", "Client Success"].map((value, i) => (
-              <div
-                key={i}
-                className="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300"
-              >
-                <h4 className="text-xl font-semibold text-blue-800">{value}</h4>
-              </div>
-            ))}
-          </div>
+    {/* 5. Our Values */}
+<section
+  className="py-16 bg-[url('https://img.freepik.com/premium-photo/young-woman-wearing-hat-standing-against-blue-background_1048944-2089531.jpg?w=826')] bg-cover bg-center bg-no-repeat relative"
+>
+  {/* Overlay to blend with gradient */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-green-50 opacity-30"></div>
+
+  <div className="relative container mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold text-blue-900 mb-12">What We Believe</h2>
+    <div className="grid md:grid-cols-4 gap-8">
+      {["Quality First", "Fair Trade", "Sustainability", "Client Success"].map((value, i) => (
+        <div
+          key={i}
+          className="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300"
+        >
+          <h4 className="text-xl font-semibold text-blue-800">{value}</h4>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* 6. Certificates */}
       {/* <section className="py-16 bg-white">
@@ -222,7 +265,7 @@ const About = () => {
       </section>  */}
 
       {/* 7. Call to Action */}
-      <section className="py-16 bg-blue-900 text-white text-center">
+      <section className="py-16 mt-5 bg-blue-900 text-white text-center">
         <h2 className="text-4xl font-bold mb-4">Let’s Work Together</h2>
         <p className="text-lg mb-6">We’re here to help you bring your ideas to life.</p>
         <a

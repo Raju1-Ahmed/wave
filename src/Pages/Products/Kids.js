@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const kidsProducts = [
 "https://i.ibb.co.com/rfkdhc2b/ocean-Kidsimage-2.png",
@@ -23,6 +23,44 @@ const kidsProducts = [
 // "https://i.ibb.co.com/QvNSdKCz/ocean-Kidsimage-10.png",
 // "https://i.ibb.co.com/FLfpXRbx/ocean-Kidsimage-1.png",
 const Kids = () => {
+  const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      const timer = setTimeout(() => setLoading(false), 1500);
+      return () => clearTimeout(timer);
+    }, []);
+  
+    if (loading) {
+      return (
+        <>
+          {/* Inline animation style inside JSX */}
+          <style>
+            {`
+              @keyframes zoomInOut {
+                0%, 100% {
+                  transform: scale(1);
+                }
+                50% {
+                  transform: scale(1.2);
+                }
+              }
+  
+              .zoom-animation {
+                animation: zoomInOut 2s ease-in-out infinite;
+              }
+            `}
+          </style>
+  
+          <div className="flex justify-center items-center h-screen bg-white">
+            <img
+              src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
+              alt="Loading..."
+              className="h-20 w-20 zoom-animation"
+            />
+          </div>
+        </>
+      );
+    }
   return (
     <main className="text-gray-800 bg-white min-h-screen py-12 px-4 md:px-8">
       <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Kidswear Collection</h2>

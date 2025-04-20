@@ -6,6 +6,7 @@ import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import { FaArrowRight } from "react-icons/fa";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -16,24 +17,24 @@ const OurProductions = () => {
   const products = [
     {
       title: "Men's Denim Jackets",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",     
+      image: "https://img.freepik.com/premium-photo/man-wearing-denim-jacket-with-black-shirt-that-says-he-is-wearing-denim-jacket_1077802-278092.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",     
     },
     {
       title: "Casual Shirts",
-      image: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
+      image: "https://img.freepik.com/free-photo/men-casual-fashion-outfit-wooden-table-top-view_1357-155.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
     },
     {
       title: "Sportswear",
-      image: "https://i.ibb.co.com/gMNzNcqb/download.jpg",
+      image: "https://img.freepik.com/premium-vector/set-sport-wear-collection-vector_18591-19983.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
     },
     {
       title: "Kids Collection",
-      image: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
+      image: "https://img.freepik.com/free-vector/baby-girl-fashion-icon-set_1284-20753.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
       url: "/kids" 
     },
     {
       title: "Women’s Fashion",
-      image: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
+      image: "https://img.freepik.com/free-photo/women-dancing-different-glasses_23-2147651691.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
     },
   ];
 
@@ -97,6 +98,19 @@ const OurProductions = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+     {/* Button aligned to the right */}
+<div className="max-w-7xl mx-auto px-8 flex justify-end">
+  <motion.a
+    href="/productionPage"
+    className="inline-flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-blue-600 transition"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.4 }}
+  >
+    View All <FaArrowRight className="text-xs" />
+  </motion.a>
+</div>
+
     </motion.section>
   );
 };
