@@ -98,10 +98,19 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
-      <div className="text-center text-sm text-gray-300 mt-10 pt-4 border-t border-gray-600">
-        © {new Date().getFullYear()} Ocean Weave. All rights reserved.
-      </div>
+    {/* Bottom Footer */}
+<div className="text-center text-sm text-gray-300 mt-10 pt-4 border-t border-gray-600">
+  © {new Date().getFullYear()} Ocean Weave. All rights reserved.{' '}
+  <a
+    href="https://resilient-nasturtium-3a7403.netlify.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-600 transition duration-300 underline ml-1"
+  >
+    robius.sani
+  </a>
+</div>
+
     </motion.footer>
   );
 };
