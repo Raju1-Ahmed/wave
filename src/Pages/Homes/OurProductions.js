@@ -79,7 +79,7 @@ const OurProductions = () => {
         {products.map((product, index) => (
           <SwiperSlide key={index}>
             <motion.div
-              className="relative group rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white"
+              className="relative group rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white"
               variants={fadeInUp}
             >
               <Link to={product.url}>
@@ -99,7 +99,7 @@ const OurProductions = () => {
         ))}
       </Swiper>
      {/* Button aligned to the right */}
-<div className="max-w-7xl mx-auto px-8 flex justify-end">
+     <div className="mt-6 sm:mt-0 max-w-7xl mx-auto px-8 flex justify-end">
   <motion.a
     href="/productionPage"
     className="inline-flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-blue-600 transition"
@@ -110,6 +110,7 @@ const OurProductions = () => {
     View All <FaArrowRight className="text-xs" />
   </motion.a>
 </div>
+
 
     </motion.section>
   );
