@@ -31,7 +31,11 @@ const Innovation = () => {
             Leading with Sustainability & Innovation
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+<<<<<<< HEAD
             At Ocean Wave, we blend eco-conscious methods with cutting-edge technology to create a smarter, cleaner, and more responsible textile industry.
+=======
+            At Ocean Weave, we blend eco-conscious methods with cutting-edge technology to create a smarter, cleaner, and more responsible textile industry.
+>>>>>>> cc73c8b (first commit)
           </p>
         </motion.div>
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
+=======
+import React from "react";
+>>>>>>> cc73c8b (first commit)
 import { motion } from "framer-motion";
 import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons/fa";
 
@@ -32,6 +36,7 @@ import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons
 //   },
 // };
 
+<<<<<<< HEAD
 const imageUrls = [
 "https://i.ibb.co.com/nNKt1vxJ/1.png",
 "https://i.ibb.co.com/WNv1J6h9/2.png" 
@@ -76,6 +81,9 @@ const About = () => {
         </>
       );
     }
+=======
+const About = () => {
+>>>>>>> cc73c8b (first commit)
   return (
     <main 
     // variants={staggerContainer}
@@ -83,6 +91,7 @@ const About = () => {
     // whileInView="show"
     // viewport={{ once: true }}
     className="text-gray-800 bg-white">
+<<<<<<< HEAD
        <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image Layers */}
       <div className="absolute inset-0 flex flex-wrap z-0">
@@ -109,6 +118,8 @@ const About = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-white">About</h1>
       </div>
     </section>
+=======
+>>>>>>> cc73c8b (first commit)
       {/* 1. About Us Intro */}
       <section className="py-16 bg-gradient-to-br from-blue-50 via-white to-blue-100">
         <div className="container mx-auto px-4 md:px-10 flex flex-col lg:flex-row items-center gap-12">
@@ -118,7 +129,11 @@ const About = () => {
             transition={{ duration: 1 }}
           className="lg:w-1/2">
             <img
+<<<<<<< HEAD
               src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+=======
+              src="https://www.oceanlanka.com/images/news/bluesign-summit-2024/dsc07492.jpg"
+>>>>>>> cc73c8b (first commit)
               alt="Our Team"
               className="rounded-xl shadow-lg object-cover w-full h-[400px]"
             />
@@ -130,13 +145,21 @@ const About = () => {
           className="lg:w-1/2">
             <h2 className="text-4xl font-bold text-blue-900 mb-6">Who We Are</h2>
             <p className="text-lg leading-relaxed mb-4">
+<<<<<<< HEAD
               Ocean Wave is a global buying house committed to delivering premium quality garments and sourcing solutions. We work closely with international buyers and local factories to ensure the best outcome in every stage of production.
+=======
+              Ocean Weave is a global buying house committed to delivering premium quality garments and sourcing solutions. We work closely with international buyers and local factories to ensure the best outcome in every stage of production.
+>>>>>>> cc73c8b (first commit)
             </p>
             <p className="text-lg leading-relaxed mb-4">
               With years of experience in the textile industry, our dedicated team bridges the gap between creativity and production — ensuring on-time delivery, compliance, and quality that meets global standards.
             </p>
             <p className="text-lg leading-relaxed">
+<<<<<<< HEAD
               From concept development to final shipment, Ocean Wave is your trusted partner in Bangladesh and beyond. Let us help you bring your fashion vision to life.
+=======
+              From concept development to final shipment, Ocean Weave is your trusted partner in Bangladesh and beyond. Let us help you bring your fashion vision to life.
+>>>>>>> cc73c8b (first commit)
             </p>
           </motion.div>
         </div>
@@ -185,11 +208,19 @@ const About = () => {
               <p className="text-gray-700">Began with a small team and a vision for responsible sourcing.</p>
             </div>
             <div>
+<<<<<<< HEAD
               <h4 className="text-xl font-semibold">🚀 Reached 10+ Clients by 2019</h4>
               <p className="text-gray-700">Expanded services and built strong relationships globally.</p>
             </div>
             <div>
               <h4 className="text-xl font-semibold">🌍 Offices in Bangladesh & Overseas</h4>
+=======
+              <h4 className="text-xl font-semibold">🚀 Reached 100+ Clients by 2019</h4>
+              <p className="text-gray-700">Expanded services and built strong relationships globally.</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold">🌍 Offices in Bangladesh & Europe</h4>
+>>>>>>> cc73c8b (first commit)
               <p className="text-gray-700">Now serving international brands with dedicated local presence.</p>
             </div>
           </div>
@@ -197,7 +228,11 @@ const About = () => {
       </motion.section>
 
       {/* 4. Our Team */}
+<<<<<<< HEAD
       {/* <motion.section
+=======
+      <motion.section
+>>>>>>> cc73c8b (first commit)
        initial={{ opacity: 0, y: 50 }}
        whileInView={{ opacity: 1, y: 0 }}
        transition={{ duration: 1 }}       
@@ -219,6 +254,7 @@ const About = () => {
             ))}
           </div>
         </div>
+<<<<<<< HEAD
       </motion.section> */}
 
     {/* 5. Our Values */}
@@ -286,6 +322,47 @@ const About = () => {
 
       {/* 7. Call to Action */}
       <section className="py-16 mt-5 bg-blue-900 text-white text-center">
+=======
+      </motion.section>
+
+      {/* 5. Our Values */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-blue-900 mb-12">What We Believe</h2>
+          <div className="grid md:grid-cols-4 gap-8">
+            {["Quality First", "Fair Trade", "Sustainability", "Client Success"].map((value, i) => (
+              <div
+                key={i}
+                className="bg-white p-6 rounded-xl shadow hover:scale-105 transition-transform duration-300"
+              >
+                <h4 className="text-xl font-semibold text-blue-800">{value}</h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Certificates */}
+      {/* <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-blue-900 mb-8">Certifications & Compliance</h2>
+          <p className="text-lg mb-6">Compliance is our strength. We are proud to be certified by:</p>
+          <div className="flex justify-center flex-wrap gap-8">
+            {["bsci.png", "sedex.png", "oekotex.png", "wrap.png"].map((cert, i) => (
+              <img
+                key={i}
+                src={`https://i.ibb.co/${cert}`}
+                alt={cert.replace(".png", "")}
+                className="h-16 object-contain"
+              />
+            ))}
+          </div>
+        </div>
+      </section> */}
+
+      {/* 7. Call to Action */}
+      <section className="py-16 bg-blue-900 text-white text-center">
+>>>>>>> cc73c8b (first commit)
         <h2 className="text-4xl font-bold mb-4">Let’s Work Together</h2>
         <p className="text-lg mb-6">We’re here to help you bring your ideas to life.</p>
         <a
