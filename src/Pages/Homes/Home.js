@@ -4,7 +4,6 @@ import QualityInnovationCompliance from './QualityInnovationCompliance'
 import Innovation from './Innovation'
 import OurProductions from './OurProductions'
 import TestimonialsAndClients from './TestimonialsAndClients'
-<<<<<<< HEAD
 import AboutSection from './AboutSection'
 
 // If you're importing the logo instead of using a relative path
@@ -67,20 +66,5 @@ export default class Home extends Component {
         {/* <TestimonialsAndClients /> */}
       </div>
     );
-=======
-
-export default class Home extends Component {
-  render() {
-    return (
-      <div>
-        <Hero/>
-        <QualityInnovationCompliance/>  
-        <OurProductions/>
-        <Innovation/>
-        <TestimonialsAndClients/>
-      
-      </div>
-    )
->>>>>>> cc73c8b (first commit)
   }
 }

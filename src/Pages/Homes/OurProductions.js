@@ -1,18 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
-=======
->>>>>>> cc73c8b (first commit)
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-<<<<<<< HEAD
 import { FaArrowRight } from "react-icons/fa";
-=======
->>>>>>> cc73c8b (first commit)
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -23,7 +17,6 @@ const OurProductions = () => {
   const products = [
     {
       title: "Men's Denim Jackets",
-<<<<<<< HEAD
       image: "https://img.freepik.com/premium-photo/man-wearing-denim-jacket-with-black-shirt-that-says-he-is-wearing-denim-jacket_1077802-278092.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",     
       url: "DenimJacket"
     },
@@ -46,25 +39,6 @@ const OurProductions = () => {
       title: "Women’s Fashion",
       image: "https://img.freepik.com/free-photo/women-dancing-different-glasses_23-2147651691.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
       url: "Womenswear"  
-=======
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
-    },
-    {
-      title: "Casual Shirts",
-      image: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
-    },
-    {
-      title: "Sportswear",
-      image: "https://i.ibb.co.com/gMNzNcqb/download.jpg",
-    },
-    {
-      title: "Kids Collection",
-      image: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
-    },
-    {
-      title: "Women’s Fashion",
-      image: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg",
->>>>>>> cc73c8b (first commit)
     },
   ];
 
@@ -109,25 +83,16 @@ const OurProductions = () => {
         {products.map((product, index) => (
           <SwiperSlide key={index}>
             <motion.div
-<<<<<<< HEAD
               className="relative group rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white"
               variants={fadeInUp}
             >
               <Link to={product.url}>
-=======
-              className="relative group rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 bg-white"
-              variants={fadeInUp}
-            >
->>>>>>> cc73c8b (first commit)
               <img
                 src={product.image}
                 alt={product.title}
                 className="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
-<<<<<<< HEAD
               </Link>
-=======
->>>>>>> cc73c8b (first commit)
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-6 py-4">
                 <h3 className="text-white text-xl font-semibold">
                   {product.title}
@@ -137,7 +102,6 @@ const OurProductions = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-<<<<<<< HEAD
      {/* Button aligned to the right */}
      <div className="mt-6 sm:mt-0 max-w-7xl mx-auto px-8 flex justify-end">
   <motion.a
@@ -152,8 +116,6 @@ const OurProductions = () => {
 </div>
 
 
-=======
->>>>>>> cc73c8b (first commit)
     </motion.section>
   );
 };

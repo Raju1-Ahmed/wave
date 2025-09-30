@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
-=======
-import React from "react";
->>>>>>> cc73c8b (first commit)
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -27,7 +23,6 @@ const fadeIn = (direction = "up", delay = 0.2) => {
 };
 
 const ProductionPage = () => {
-<<<<<<< HEAD
  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -78,17 +73,6 @@ const ProductionPage = () => {
     { title: "Casual Shirts", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpiVwCoh1cFsM2e_Utksp92tFm6g6BvaXDQ&s", url: "/CasualShirt" },
     { title: "Hoodies", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkh6V0JGSv0gGD7bPvqZW5gFghgPh5YdIvHLwPi8ERvhkhbcDalaIJ2oUtEpNhM7uzSw&usqp=CAU", url: "/Hoddie" },
     { title: "Nightwear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBywfROgqjdZrxGRp4gwh_tAfoWUDjtwhHtA&s", url: "/Nightwear" },
-=======
-  const productCategories = [
-    { title: "Menswear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s", url: "/menswear" },
-    { title: "Womenswear", img: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg", url: "/womenswear" },
-    { title: "Kidswear", img: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg", url: "/kids" },
-    { title: "Sportswear", img: "https://i.ibb.co.com/gMNzNcqb/download.jpg", url: "/sportswear" },
-    { title: "Denim Jackets", img: "https://i.ibb.co.com/B2xvDF8p/download-1.jpg", url: "/denim-jackets" },
-    { title: "Casual Shirts", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpiVwCoh1cFsM2e_Utksp92tFm6g6BvaXDQ&s", url: "/casual-shirts" },
-    { title: "Hoodies", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkh6V0JGSv0gGD7bPvqZW5gFghgPh5YdIvHLwPi8ERvhkhbcDalaIJ2oUtEpNhM7uzSw&usqp=CAU", url: "/hoodies" },
-    { title: "Nightwear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBywfROgqjdZrxGRp4gwh_tAfoWUDjtwhHtA&s", url: "/nightwear" },
->>>>>>> cc73c8b (first commit)
   ];
 
   return (
@@ -120,7 +104,6 @@ const ProductionPage = () => {
         </div>
       </section>
 
-<<<<<<< HEAD
    {/* 2. Introduction Section */}
 <section
   className="py-20 bg-cover bg-center bg-no-repeat"
@@ -139,20 +122,6 @@ const ProductionPage = () => {
   </motion.div>
 </section>
 
-=======
-      {/* 2. Introduction Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 via-white to-blue-100">
-        <motion.div
-          className="container mx-auto px-6 text-center"
-          {...fadeIn("up", 0.2)}
-        >
-          <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Production Process</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            Ocean Weave ensures every step of the production process meets global standards of quality, sustainability, and innovation.
-          </p>
-        </motion.div>
-      </section>
->>>>>>> cc73c8b (first commit)
 
       {/* 3. Production Steps Timeline */}
       <section className="py-16 bg-white">
@@ -183,11 +152,7 @@ const ProductionPage = () => {
       </section>
 
       {/* 4. Certifications Highlight */}
-<<<<<<< HEAD
       {/* <section className="py-16 bg-white">
-=======
-      <section className="py-16 bg-white">
->>>>>>> cc73c8b (first commit)
         <motion.div className="container mx-auto px-6 text-center" {...fadeIn("up", 0.2)}>
           <h3 className="text-3xl font-bold text-blue-900 mb-6">Certified Production</h3>
           <p className="text-lg mb-6 max-w-2xl mx-auto">
@@ -204,11 +169,7 @@ const ProductionPage = () => {
             ))}
           </div>
         </motion.div>
-<<<<<<< HEAD
       </section> */}
-=======
-      </section>
->>>>>>> cc73c8b (first commit)
 
       {/* 5. Call to Action */}
       <section className="py-20 bg-blue-900 text-white text-center">
@@ -216,11 +177,7 @@ const ProductionPage = () => {
           <h3 className="text-3xl font-bold mb-4">Looking to Start Your Production?</h3>
           <p className="mb-6 text-lg">Let’s create amazing products together — from concept to completion.</p>
           <a
-<<<<<<< HEAD
             href="/contractPage"
-=======
-            href="/contact"
->>>>>>> cc73c8b (first commit)
             className="inline-block bg-white text-blue-900 font-semibold px-8 py-3 rounded-full hover:bg-blue-200 transition"
           >
             Get in Touch

@@ -18,11 +18,7 @@ const testimonials = [
   {
     name: "John Doe",
     role: "Buyer, USA",
-<<<<<<< HEAD
     text: "Ocean Wave consistently delivers high-quality products. Great communication and timely delivery.",
-=======
-    text: "Ocean Weave consistently delivers high-quality products. Great communication and timely delivery.",
->>>>>>> cc73c8b (first commit)
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s", // Add client image here
   },
   {
@@ -34,30 +30,17 @@ const testimonials = [
   {
     name: "Ravi Kumar",
     role: "Textile Merchant, India",
-<<<<<<< HEAD
     text: "We’ve worked with Ocean Wave for 5 years — outstanding commitment and professionalism!",
-=======
-    text: "We’ve worked with Ocean Weave for 5 years — outstanding commitment and professionalism!",
->>>>>>> cc73c8b (first commit)
     image: "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740", // Add client image here
   },
 ];
 
-<<<<<<< HEAD
 // const clientLogos = [
 //   "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740",
 //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJqjY1ycX0tjY6tTTjt8uV-MeJDkp0NgCq684ZuAYMzPhaRbxv_NacGzErtfaq3KVJjk&usqp=CAU",
 //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s",
 //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8RQUF257gB28m0W0oq2kZIUhdEieA5WE3w&s",
 // ];
-=======
-const clientLogos = [
-  "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJqjY1ycX0tjY6tTTjt8uV-MeJDkp0NgCq684ZuAYMzPhaRbxv_NacGzErtfaq3KVJjk&usqp=CAU",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8RQUF257gB28m0W0oq2kZIUhdEieA5WE3w&s",
-];
->>>>>>> cc73c8b (first commit)
 
 const TestimonialsAndClients = () => {
   return (
@@ -109,11 +92,7 @@ const TestimonialsAndClients = () => {
       </motion.div>
 
       {/* Client Logos */}
-<<<<<<< HEAD
       {/* <motion.div
-=======
-      <motion.div
->>>>>>> cc73c8b (first commit)
         className="mt-20 max-w-6xl mx-auto px-4"
         initial="hidden"
         whileInView="visible"
@@ -134,11 +113,7 @@ const TestimonialsAndClients = () => {
             />
           ))}
         </div>
-<<<<<<< HEAD
       </motion.div> */}
-=======
-      </motion.div>
->>>>>>> cc73c8b (first commit)
     </section>
   );
 };

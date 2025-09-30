@@ -15,23 +15,16 @@
     "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
     "swiper": "^11.2.6",
-<<<<<<< HEAD
     "typescript": "^5.8.3",
-=======
->>>>>>> cc73c8b (first commit)
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-<<<<<<< HEAD
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-=======
-    "eject": "react-scripts eject"
->>>>>>> cc73c8b (first commit)
   },
   "eslintConfig": {
     "extends": [
@@ -53,10 +46,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-<<<<<<< HEAD
     "gh-pages": "^6.3.0",
-=======
->>>>>>> cc73c8b (first commit)
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.3"
   }

@@ -6,10 +6,7 @@ import {
   FaInstagram,
   FaEnvelope,
   FaPhone,
-<<<<<<< HEAD
   FaMapMarkerAlt,
-=======
->>>>>>> cc73c8b (first commit)
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -20,28 +17,16 @@ const Footer = () => {
       transition={{ duration: 1 }}
       className="bg-gradient-to-tr from-[#001F3F] to-[#004466] text-white px-6 py-10 mt-20"
     >
-<<<<<<< HEAD
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
-=======
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
->>>>>>> cc73c8b (first commit)
         {/* Logo & About */}
         <div>
           <img
             src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
-<<<<<<< HEAD
             alt="Ocean Wave Logo"
             className="w-32 mb-4"
           />
           <p className="text-sm leading-6">
             Ocean Wave is a modern buying house, sourcing high-quality garments
-=======
-            alt="Ocean Weave Logo"
-            className="w-32 mb-4"
-          />
-          <p className="text-sm leading-6">
-            Ocean Weave is a modern buying house, sourcing high-quality garments
->>>>>>> cc73c8b (first commit)
             globally with a commitment to ethics and sustainability.
           </p>
         </div>
@@ -79,7 +64,6 @@ const Footer = () => {
           </ul>
         </div>
 
-<<<<<<< HEAD
     {/* Bangladesh Office */}
 <div>
   <h3 className="text-lg font-semibold mb-4">🇧🇩 Bangladesh Office</h3>
@@ -166,46 +150,10 @@ const Footer = () => {
   </ul>
 </div>
 
-=======
-        {/* Dhaka Office */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Dhaka Office</h3>
-          <ul className="text-sm space-y-2">
-            <li className="flex items-center gap-2">
-              <FaPhone /> +880 1234 567890
-            </li>
-            <li className="flex items-center gap-2">
-              <FaEnvelope /> info@oceanweave.com
-            </li>
-            <li>
-              123 Gulshan Avenue,<br />
-              Dhaka 1212, Bangladesh
-            </li>
-          </ul>
-        </div>
-
-        {/* New York Office */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">New York Office</h3>
-          <ul className="text-sm space-y-2">
-            <li className="flex items-center gap-2">
-              <FaPhone /> +1 (555) 987-6543
-            </li>
-            <li className="flex items-center gap-2">
-              <FaEnvelope /> ny@oceanweave.com
-            </li>
-            <li>
-              456 5th Avenue,<br />
-              New York, NY 10018, USA
-            </li>
-          </ul>
-        </div>
->>>>>>> cc73c8b (first commit)
       </div>
 
       {/* Bottom Footer */}
       <div className="text-center text-sm text-gray-300 mt-10 pt-4 border-t border-gray-600">
-<<<<<<< HEAD
         © {new Date().getFullYear()} Ocean Wave. All rights reserved.{" "}
         <a
           href="https://robiussanirazu.netlify.app/"
@@ -215,9 +163,6 @@ const Footer = () => {
         >
           robius.sany
         </a>
-=======
-        © {new Date().getFullYear()} Ocean Weave. All rights reserved.
->>>>>>> cc73c8b (first commit)
       </div>
     </motion.footer>
   );
