@@ -47,7 +47,7 @@ export default class Home extends Component {
 
           <div className="flex justify-center items-center h-screen bg-white">
           <img
-              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
+              src="https://i.ibb.co.com/Wpq6QZkN/Ocean-Wave-Logo.png"
               alt="Loading..."
               className=" zoom-animation"
             />
@@ -63,7 +63,7 @@ export default class Home extends Component {
         <OurProductions />
         <Innovation />
         <AboutSection />
-        <TestimonialsAndClients />
+        {/* <TestimonialsAndClients /> */}
       </div>
     );
   }

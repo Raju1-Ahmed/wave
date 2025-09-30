@@ -12,9 +12,14 @@ const Navbar = () => {
       title: "Production",
       route: "/productionPage",
       dropdown: [
-        { title: "Menswear", route: "/productionPage#menswear" },
-        { title: "Womenswear", route: "/productionPage#womenswear" },
+        { title: "Menswear", route: "/MenWear" },
+        { title: "Womenswear", route: "/Womenswear" },
         { title: "Kidswear", route: "/kids" },
+        { title: "Sportswear", route: "/Sportswear" },
+        { title: "DenimJacket", route: "/DenimJacket" },
+        { title: "CasualShirt", route: "/CasualShirt" },
+        { title: "Hoodies", route: "/Hoddie" },
+        { title: "Nightwear", route: "/Nightwear" },
       ],
     },
     { title: "Contact Us", route: "/contractPage" },
@@ -29,13 +34,13 @@ const Navbar = () => {
           <a href="/">
             <img
               src="https://i.ibb.co.com/FqggTmnh/oceanweavlogo.png"
-              alt="Ocean Weave Logo"
+              alt="Ocean Wave Logo"
               className="h-10 w-auto"
             />
           </a>
           <span className="text-xl font-bold text-blue-800 tracking-wide">
-            <a href="/">Ocean Weave</a>
-          </span>
+            <a href="/"> <span className="text-3xl font-bold text-blue-800 french-script">O</span>cean <span className="text-3xl font-bold text-blue-800 french-script">W</span>ave</a>         
+            </span>
         </div>
 
         {/* Desktop Menu */}

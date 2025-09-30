@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from 'react';
 
-const kidsProducts = [
-"https://i.ibb.co.com/F4zg1B3t/Kidswear-3.jpg",
-"https://i.ibb.co.com/2bjMHBn/Kidswear-2.jpg",
-"https://i.ibb.co.com/3YMnKkHX/Kidswear-1.jpg",
-"https://i.ibb.co.com/4ZDwG9S5/Kidswear-10.jpg",
-"https://i.ibb.co.com/zqgFYrk/Kidswear-9.jpg",
-"https://i.ibb.co.com/MygdwDkD/Kidswear-8.jpg",
-"https://i.ibb.co.com/sdgSDF3b/Kidswear-7.jpg",
-"https://i.ibb.co.com/4ZDwG9S5/Kidswear-10.jpg",
-"https://i.ibb.co.com/93gqxcqt/Kidswear-5.jpg",
-"https://i.ibb.co.com/Kz0CKnF4/Kidswear-4.jpg",
-"https://i.ibb.co.com/ZRyqH0Pw/Kidswear-1.jpg",
+const Nightwears = [
+"https://i.ibb.co.com/LXJ2GGQv/Night-Wear-1.jpg",
+"https://i.ibb.co.com/bgnJWdHk/Night-Wear-2.jpg",
+"https://i.ibb.co.com/8gG4DT6m/Night-Wear-3.jpg",
+"https://i.ibb.co.com/mPcvt7t/Night-Wear-1.jpg",
+"https://i.ibb.co.com/N6PCQYR3/Night-Wear-2.jpg",
+"https://i.ibb.co.com/RpvJrhDm/Night-Wear-3.jpg",
+"https://i.ibb.co.com/hJc26SDM/Night-Wear-4.jpg",
+"https://i.ibb.co.com/4gSjYFH3/Night-Wear-4.jpg",
+"https://i.ibb.co.com/Q7h04xxb/Night-Wear-5.jpg",
+"https://i.ibb.co.com/q2FTf31/Night-Wear-6.jpg",
+"https://i.ibb.co.com/MDMSy0FS/Night-Wear-7.jpg",
 ];
-// "https://i.ibb.co.com/rfkdhc2b/ocean-Kidsimage-2.png",
-// "https://i.ibb.co.com/pjJH65KC/ocean-Kidsimage-3.png",
-// "https://i.ibb.co.com/R4gjzs6K/ocean-Kidsimage-4.png",
-// "https://i.ibb.co.com/HDFmjXyZ/ocean-Kidsimage-5.png",
-// "https://i.ibb.co.com/LFZn0bb/ocean-Kidsimage-6.png",
-// "https://i.ibb.co.com/ZptsnqMm/ocean-Kidsimage-7.png",
-// "https://i.ibb.co.com/KxnG10Jd/ocean-Kidsimage-8.png",
-// "https://i.ibb.co.com/HfpKP8c2/ocean-Kidsimage-9.png",
-// "https://i.ibb.co.com/QvNSdKCz/ocean-Kidsimage-10.png",
-// "https://i.ibb.co.com/FLfpXRbx/ocean-Kidsimage-1.png",
-const Kids = () => {
+
+
+const Nightwear = () => {
   const [loading, setLoading] = useState(true);
   
     useEffect(() => {
@@ -66,7 +58,7 @@ const Kids = () => {
     <main className="text-gray-800 bg-white min-h-screen py-12 px-4 md:px-8">
       <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Kids Wear Collection</h2>
       <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-        {kidsProducts.map((img, index) => (
+        {Nightwears.map((img, index) => (
           <div key={index} className="break-inside-avoid overflow-hidden rounded-lg shadow-lg group">
             <img
               src={img}
@@ -81,4 +73,4 @@ const Kids = () => {
   );
 };
 
-export default Kids;
+export default Nightwear;

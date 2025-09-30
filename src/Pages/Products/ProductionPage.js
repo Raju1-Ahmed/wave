@@ -53,7 +53,7 @@ const ProductionPage = () => {
 
         <div className="flex justify-center items-center h-screen bg-white">
         <img
-              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
+              src="https://i.ibb.co.com/Wpq6QZkN/Ocean-Wave-Logo.png"
               alt="Loading..."
               className=" zoom-animation"
             />
@@ -65,14 +65,14 @@ const ProductionPage = () => {
   const productCategories = [
     { title: "Menswear", 
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfZZxf5qCKjoBomc2LNTwWT3FdtnzjrnRuw&s",
-      url: "/menswear" },
+      url: "/MenWear" },
     { title: "Womenswear", img: "https://i.ibb.co.com/nMNV5hMS/download-2.jpg", url: "/womenswear" },
-    { title: "Kidswear", img: "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg", url: "/kids" },
+    { title: "Kidswear", img: "https://i.ibb.co.com/m5Zd981D/download.jpg", url: "/kids" },
     { title: "Sportswear", img: "https://i.ibb.co.com/gMNzNcqb/download.jpg", url: "/sportswear" },
-    { title: "Denim Jackets", img: "https://i.ibb.co.com/B2xvDF8p/download-1.jpg", url: "/denim-jackets" },
-    { title: "Casual Shirts", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpiVwCoh1cFsM2e_Utksp92tFm6g6BvaXDQ&s", url: "/casual-shirts" },
-    { title: "Hoodies", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkh6V0JGSv0gGD7bPvqZW5gFghgPh5YdIvHLwPi8ERvhkhbcDalaIJ2oUtEpNhM7uzSw&usqp=CAU", url: "/hoodies" },
-    { title: "Nightwear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBywfROgqjdZrxGRp4gwh_tAfoWUDjtwhHtA&s", url: "/nightwear" },
+    { title: "Denim Jackets", img: "https://i.ibb.co.com/B2xvDF8p/download-1.jpg", url: "/DenimJacket" },
+    { title: "Casual Shirts", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpiVwCoh1cFsM2e_Utksp92tFm6g6BvaXDQ&s", url: "/CasualShirt" },
+    { title: "Hoodies", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGkh6V0JGSv0gGD7bPvqZW5gFghgPh5YdIvHLwPi8ERvhkhbcDalaIJ2oUtEpNhM7uzSw&usqp=CAU", url: "/Hoddie" },
+    { title: "Nightwear", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBywfROgqjdZrxGRp4gwh_tAfoWUDjtwhHtA&s", url: "/Nightwear" },
   ];
 
   return (
@@ -117,7 +117,7 @@ const ProductionPage = () => {
   >
     <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Production Process</h2>
     <p className="text-lg max-w-3xl mx-auto text-gray-800">
-      Ocean Weave ensures every step of the production process meets global standards of quality, sustainability, and innovation.
+      Ocean Wave ensures every step of the production process meets global standards of quality, sustainability, and innovation.
     </p>
   </motion.div>
 </section>

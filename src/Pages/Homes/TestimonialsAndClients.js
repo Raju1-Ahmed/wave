@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: "John Doe",
     role: "Buyer, USA",
-    text: "Ocean Weave consistently delivers high-quality products. Great communication and timely delivery.",
+    text: "Ocean Wave consistently delivers high-quality products. Great communication and timely delivery.",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBZ654MetsAHyBxp90y9BYkX1FqDUN-tQXQ&s", // Add client image here
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
   {
     name: "Ravi Kumar",
     role: "Textile Merchant, India",
-    text: "We’ve worked with Ocean Weave for 5 years — outstanding commitment and professionalism!",
+    text: "We’ve worked with Ocean Wave for 5 years — outstanding commitment and professionalism!",
     image: "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740", // Add client image here
   },
 ];

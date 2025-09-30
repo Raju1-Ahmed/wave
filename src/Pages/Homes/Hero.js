@@ -63,8 +63,8 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-center text-center">
   <img
     className=" mt-4 mb-2 h-auto"
-    src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
-    alt="Ocean Weave Logo"
+    src="https://i.ibb.co.com/Wpq6QZkN/Ocean-Wave-Logo.png"
+    alt="Ocean Wave Logo"
   />
   <p className="text-blue-800 mt-4 mb-4 font-sm text-4xl">
     Creating Quality Product

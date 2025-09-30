@@ -6,6 +6,13 @@ import About from './Pages/About';
 import ProductionPage from './Pages/Products/ProductionPage';
 import Footer from './components/Footer';
 import Kids from './Pages/Products/Kids';
+import Womenswear from './Pages/Products/Womenswear';
+import Men from './Pages/Products/Men';
+import Sportswear from './Pages/Products/Sportswear';
+import DenimJacket from './Pages/Products/DenimJacket';
+import CasualShirt from './Pages/Products/CasualShirt';
+import Hoddie from './Pages/Products/Hoddie';
+import Nightwear from './Pages/Products/Nightwear';
 // Routes 
 function App() {
   return (
@@ -17,6 +24,13 @@ function App() {
          <Route path="/contractPage" element={<ContractPage/>} />
          <Route path="/productionPage" element={<ProductionPage/>} />
          <Route path="/kids" element={<Kids/>} />
+         <Route path="/Womenswear" element={<Womenswear/>} />
+         <Route path="/MenWear" element={<Men/>} />
+         <Route path="/Sportswear" element={<Sportswear/>} />
+         <Route path="/DenimJacket" element={<DenimJacket/>} />
+         <Route path="/CasualShirt" element={<CasualShirt/>} />
+         <Route path="/Hoddie" element={<Hoddie/>} />
+         <Route path="/Nightwear" element={<Nightwear/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

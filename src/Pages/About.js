@@ -33,11 +33,8 @@ import { FaCertificate, FaHandshake, FaLeaf, FaStar, FaUsers } from "react-icons
 // };
 
 const imageUrls = [
-  "https://media.istockphoto.com/id/173910563/photo/display-of-several-polo-shirts-in-a-variety-of-color.jpg?s=1024x1024&w=is&k=20&c=snqLEqIIOofmKgkgSTy3-ncaqdz6UKwY6YKbxQCpiKU=",
-  "https://media.istockphoto.com/id/669451786/photo/row-of-nurse-uniform-hanging.jpg?s=1024x1024&w=is&k=20&c=gf7rMaTKxS2HYMHesutbF3aBs_zzkKS-fv3ujNuZYvM=",
-  "https://i.ibb.co/gxPC9dd/1713437761992-Photo-Collage-for-Web-07-01-05.jpg",
-  "https://i.ibb.co.com/gMNzNcqb/download.jpg",
-  "https://i.ibb.co.com/B2xvDF8p/download-1.jpg"
+"https://i.ibb.co.com/nNKt1vxJ/1.png",
+"https://i.ibb.co.com/WNv1J6h9/2.png" 
 ];
 
 const About = () => {
@@ -71,7 +68,7 @@ const About = () => {
   
           <div className="flex justify-center items-center h-screen bg-white">
           <img
-              src="https://i.ibb.co.com/KjCHccHX/ocean-Wave.jpg"
+              src="https://i.ibb.co.com/Wpq6QZkN/Ocean-Wave-Logo.png"
               alt="Loading..."
               className=" zoom-animation"
             />
@@ -121,7 +118,7 @@ const About = () => {
             transition={{ duration: 1 }}
           className="lg:w-1/2">
             <img
-              src="https://www.oceanlanka.com/images/news/bluesign-summit-2024/dsc07492.jpg"
+              src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Our Team"
               className="rounded-xl shadow-lg object-cover w-full h-[400px]"
             />
@@ -133,13 +130,13 @@ const About = () => {
           className="lg:w-1/2">
             <h2 className="text-4xl font-bold text-blue-900 mb-6">Who We Are</h2>
             <p className="text-lg leading-relaxed mb-4">
-              Ocean Weave is a global buying house committed to delivering premium quality garments and sourcing solutions. We work closely with international buyers and local factories to ensure the best outcome in every stage of production.
+              Ocean Wave is a global buying house committed to delivering premium quality garments and sourcing solutions. We work closely with international buyers and local factories to ensure the best outcome in every stage of production.
             </p>
             <p className="text-lg leading-relaxed mb-4">
               With years of experience in the textile industry, our dedicated team bridges the gap between creativity and production — ensuring on-time delivery, compliance, and quality that meets global standards.
             </p>
             <p className="text-lg leading-relaxed">
-              From concept development to final shipment, Ocean Weave is your trusted partner in Bangladesh and beyond. Let us help you bring your fashion vision to life.
+              From concept development to final shipment, Ocean Wave is your trusted partner in Bangladesh and beyond. Let us help you bring your fashion vision to life.
             </p>
           </motion.div>
         </div>
@@ -188,11 +185,11 @@ const About = () => {
               <p className="text-gray-700">Began with a small team and a vision for responsible sourcing.</p>
             </div>
             <div>
-              <h4 className="text-xl font-semibold">🚀 Reached 100+ Clients by 2019</h4>
+              <h4 className="text-xl font-semibold">🚀 Reached 10+ Clients by 2019</h4>
               <p className="text-gray-700">Expanded services and built strong relationships globally.</p>
             </div>
             <div>
-              <h4 className="text-xl font-semibold">🌍 Offices in Bangladesh & Europe</h4>
+              <h4 className="text-xl font-semibold">🌍 Offices in Bangladesh & Overseas</h4>
               <p className="text-gray-700">Now serving international brands with dedicated local presence.</p>
             </div>
           </div>
@@ -200,7 +197,7 @@ const About = () => {
       </motion.section>
 
       {/* 4. Our Team */}
-      <motion.section
+      {/* <motion.section
        initial={{ opacity: 0, y: 50 }}
        whileInView={{ opacity: 1, y: 0 }}
        transition={{ duration: 1 }}       
@@ -222,7 +219,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
     {/* 5. Our Values */}
 <section
@@ -247,22 +244,45 @@ const About = () => {
 </section>
 
       {/* 6. Certificates */}
-      {/* <section className="py-16 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-8">Certifications & Compliance</h2>
-          <p className="text-lg mb-6">Compliance is our strength. We are proud to be certified by:</p>
-          <div className="flex justify-center flex-wrap gap-8">
-            {["bsci.png", "sedex.png", "oekotex.png", "wrap.png"].map((cert, i) => (
-              <img
-                key={i}
-                src={`https://i.ibb.co/${cert}`}
-                alt={cert.replace(".png", "")}
-                className="h-16 object-contain"
-              />
-            ))}
-          </div>
-        </div>
-      </section>  */}
+    <section className="py-20 bg-gradient-to-r from-blue-50 to-white">
+  <div className="container mx-auto px-6 text-center">
+    <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+      Certifications & Compliance
+    </h2>
+    <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+      “Quality is our promise, Compliance is our strength.”
+    </p>
+    <p className="text-base md:text-lg text-gray-700 mb-12">
+      We are proud to be certified by globally recognized organizations ensuring 
+      sustainability, safety, and quality in every step.
+    </p>
+
+    <div className="flex justify-center flex-wrap gap-12">
+      <div className="group bg-white shadow-lg p-6 rounded-2xl w-40 md:w-48 flex items-center justify-center hover:shadow-2xl hover:scale-105 transition duration-300">
+        <img
+          src="https://i.ibb.co.com/v4cfjDBc/Certificate-Logo-1.png"
+          alt="Oeko-Tex"
+          className="h-16 md:h-20 object-contain"
+        />
+      </div>
+      <div className="group bg-white shadow-lg p-6 rounded-2xl w-40 md:w-48 flex items-center justify-center hover:shadow-2xl hover:scale-105 transition duration-300">
+        <img
+          src="https://i.ibb.co.com/LTBxXnN/Certificate-Logo-2.png"
+          alt="OCS"
+          className="h-16 md:h-20 object-contain"
+        />
+      </div>
+      <div className="group bg-white shadow-lg p-6 rounded-2xl w-40 md:w-48 flex items-center justify-center hover:shadow-2xl hover:scale-105 transition duration-300">
+        <img
+          src="https://i.ibb.co.com/bYrVhKc/Certificate-Logo-3.png"
+          alt="RCS"
+          className="h-16 md:h-20 object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* 7. Call to Action */}
       <section className="py-16 mt-5 bg-blue-900 text-white text-center">

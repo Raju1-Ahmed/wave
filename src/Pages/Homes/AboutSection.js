@@ -47,7 +47,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          About Ocean Weave
+          About Ocean Wave
         </motion.h2>
         <motion.p
           className="text-lg text-gray-800 mb-6"
@@ -55,7 +55,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Ocean Weave is a trusted garment sourcing house committed to delivering quality and sustainability. We work with international clients to turn fashion ideas into reality — from design to final product.
+          Ocean Wave is a trusted garment sourcing house committed to delivering quality and sustainability. We work with international clients to turn fashion ideas into reality — from design to final product.
         </motion.p>
 
         {/* Button with left arrow */}

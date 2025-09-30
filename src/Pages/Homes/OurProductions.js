@@ -18,14 +18,17 @@ const OurProductions = () => {
     {
       title: "Men's Denim Jackets",
       image: "https://img.freepik.com/premium-photo/man-wearing-denim-jacket-with-black-shirt-that-says-he-is-wearing-denim-jacket_1077802-278092.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",     
+      url: "DenimJacket"
     },
     {
       title: "Casual Shirts",
       image: "https://img.freepik.com/free-photo/men-casual-fashion-outfit-wooden-table-top-view_1357-155.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
+      url: "CasualShirt"  
     },
     {
       title: "Sportswear",
       image: "https://img.freepik.com/premium-vector/set-sport-wear-collection-vector_18591-19983.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
+      url: "Sportswear"  
     },
     {
       title: "Kids Collection",
@@ -35,6 +38,7 @@ const OurProductions = () => {
     {
       title: "Women’s Fashion",
       image: "https://img.freepik.com/free-photo/women-dancing-different-glasses_23-2147651691.jpg?ga=GA1.1.950069504.1745131482&semt=ais_hybrid&w=740",
+      url: "Womenswear"  
     },
   ];
 
